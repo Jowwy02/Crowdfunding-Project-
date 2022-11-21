@@ -8,10 +8,12 @@
 
 :root {
     --Moderate-cyan: hsl(176, 50%, 47%);
-    --Dark-cyan: hsl(176, 72%, 28%);
+    --Dark-cyan: hsl(176, 50%, 47%);
     --black: hsl(0, 0%, 0%);
     --dark-gray: hsl(0, 0%, 40%);
     --white: #fff;
+    --deactivated-black: rgb(180, 178, 178);
+    --deactivated-moderate-cyan: hsl(176, 18%, 67%);
 }
         
 
@@ -78,6 +80,91 @@ body {
   margin-bottom: 2rem;
 }
 
+
+.Reward-container {
+    padding-right: 2rem;
+}
+
+.Reward-pledge {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Reward-pledge p {
+    color:var(--Dark-cyan);
+    font-weight: 700;
+}
+
+.Reward-paragraph {
+    line-height: 30px;
+    margin-top: 18px;
+
+}
+
+
+.Reward-button {    
+   display: flex;
+   flex-direction: column;
+   padding-top: 2rem;
+   justify-content: space-between;
+}
+
+.Reward-button button {
+    border-radius: 30rem;
+    padding: 1rem;
+    list-style: none;
+    font-weight: 50px;
+    width: 160px;
+    margin-top: 0.5rem;
+}
+
+.Reward-count {
+    font-size: 35px;
+    font-weight: 700;
+    column-gap: 2px;
+    margin-right: 16px;
+
+}
+
+.Reward-button div {
+    display: flex;
+    align-items: center;
+}
+
+.Reward-button button {
+    background-color: var(--Moderate-cyan);
+    color: var(--white);
+    border-style: none;
+}
+
+.Reward-container-deativated .Reward-pledge h4 {
+    color: var(--deactivated-black);
+}
+
+.Reward-container-deativated .Reward-pledge {
+    color: var(--deactivated-moderate-cyan);
+    font-weight: 300;
+}
+
+.Reward-container-deativated .Reward-paragraph p {
+    color: var(--deactivated-black);
+}
+
+.Reward-container-deativated .Reward-count {
+    color: var(--deactivated-black);
+}
+
+.Reward-container-deativated .btn {
+    background-color: var(--deactivated-black);
+}
+
+.Reward-container-deativated .s {
+    color: var(--deactivated-black);
+}
+
+
+
 @media screen and (min-width: 768px) {
  .header-background {
     background-image: url(./images/image-hero-desktop.jpg);
@@ -102,63 +189,13 @@ body {
     .Reward-pledge {   
         flex-direction: row;  
     }
-}
 
-.Reward-container {
-    /* height: 200px; */
-    padding-right: 2rem;
-}
+    .Reward-button {
+        flex-direction: row;
+    }
 
-.Reward-pledge {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.Reward-pledge p {
-    color:var(--Dark-cyan)
-}
-
-.Reward-paragraph {
-    line-height: 30px;
-    margin-top: 18px;
-
-}
-
-
-.Reward-button {
     
-   display: flex;
-   padding-top: 2rem;
-   justify-content: space-between;
 }
-
-.Reward-button button {
-    border-radius: 30rem;
-    padding: 1rem;
-    list-style: none;
-    font-weight: 50px;
-}
-
-.Reward-count {
-    font-size: 35px;
-    font-weight: 700;
-    column-gap: 2px;
-    margin-right: 16px;
-
-}
-
-.Reward-button div {
-    display: flex;
-    align-items: center;
-}
-
-.Reward-button button {
-    background-color: var(--Moderate-cyan);
-    color: var(--white);
-    border-style: none;
-}
-
 
 
 
