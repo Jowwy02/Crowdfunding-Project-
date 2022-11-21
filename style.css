@@ -1,78 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --Moderate-cyan: hsl(176, 50%, 47%);
-    --Dark-cyan: hsl(176, 72%, 28%);
-    --black: hsl(0, 0%, 40%);
-    --dark-gray: hsl(0, 0%, 40%);
-    --white: #fff;
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 40%);
+  --dark-gray: hsl(0, 0%, 40%);
+  --white: #fff;
 }
-        
 
 body {
-    font-family: "commissioner", sans-serif;
+  font-family: "commissioner", sans-serif;
 }
 
 .header-background {
-    background-image: url(./images/image-hero-mobile.jpg);
-    height: 18rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./images/image-hero-mobile.jpg);
+  height: 18rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-background .nav-container {
-    padding: 0 1.5rem;
-    display: flex;
-    height: 4rem;
-    align-items: center;
-    justify-content: space-between;
+  padding: 0 1.5rem;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-links {
-    display: none;
-    column-gap: 2rem;
-    list-style-type: none;
-    text-decoration: none;
-    list-style: none;
+  display: none;
+  /* position: absolute; */
+  /* background-color: black; */
+  list-style: none;
 }
 
 .nav-links a {
-    color: var(--white);
-    font-size: 16px;
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .hamburger {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    background-color: #fff;
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    right: 10%;
+    /* bottom: 3%; */
+    border-radius: 10px;
+    text-align: space-between;
+    padding: 10px;
+  }
+
+  .nav-links a {
+    color: black;
+    font-size: 15px;
+  }
+}
+
+.nav_items1 {
+  border-bottom: 0.5px solid rgb(110, 100, 100);
 }
 
 @media screen and (min-width: 768px) {
- .header-background {
+  .header-background {
     background-image: url(./images/image-hero-desktop.jpg);
     background-size: cover;
     padding: 2rem 5rem;
- } 
- 
- .nav-links {
+  }
+
+  .nav-links {
     display: flex;
     align-items: center;
     text-decoration: none;
- }
+    column-gap: 2rem;
+  }
 
- .hamburger {
+  .hamburger {
     display: none;
- }
+  }
 
- .nav-links a {
+  .nav-links a {
     text-decoration: none;
- }
- 
- 
+  }
 }
-
