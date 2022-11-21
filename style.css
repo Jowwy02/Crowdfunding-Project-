@@ -56,10 +56,13 @@ body {
   padding: 2rem 1.5rem;
 }
 
-.about-project-section {
+.about-project-section,
+.Reward-container,
+.black-edition{
     padding: 2rem 1.5rem;
     box-shadow: 0px 0px 8px -5px rgb(94, 93, 93);
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .about-project-section > h4 {
@@ -96,4 +99,64 @@ body {
     text-decoration: none;
  } 
 }
+
+.Reward-container {
+    /* height: 200px; */
+    padding-right: 2rem;
+}
+
+.Reward-pledge {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Reward-pledge p {
+    color:var(--Dark-cyan)
+}
+
+.Reward-paragraph {
+    line-height: 30px;
+    margin-top: 18px;
+
+}
+
+
+.Reward-button {
+    
+   display: flex;
+   padding-top: 2rem;
+   justify-content: space-between;
+}
+
+.Reward-button button {
+    border-radius: 30rem;
+    padding: 1rem;
+    list-style: none;
+    font-weight: 50px;
+}
+
+.Reward-count {
+    font-size: 35px;
+    font-weight: 700;
+    column-gap: 2px;
+    margin-right: 16px;
+
+}
+
+.Reward-button div {
+    display: flex;
+    align-items: center;
+}
+
+.Reward-button button {
+    background-color: var(--Moderate-cyan);
+    color: var(--white);
+    border-style: none;
+}
+
+
+
+
+
+
 
