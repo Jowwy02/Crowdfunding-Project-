@@ -1,33 +1,76 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Crowdfunding product page</title>
- <main class="main-container">
-  <section class="header-background">
-    <header class="nav-container">
-      <div class="main-container-header-logo">
-        <img src="./images/logo.svg" alt="logo">
-      </div>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Discover</a></li>
-          <li><a href="#">Get started</a></li>
-        </ul> 
-        <button class="hamburger">
-          <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z"/></g></svg>
-        </button>
-      </nav>
-    </header>
-  </section>
-</head>
-<body>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style-kachi.css" />
+
+    <title>Frontend Mentor | Crowdfunding product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <section class="cards-section">
+      <section class="section-container">
+        <div class="mastercraft-card">
+          <div class="mastercraft-logo">
+            <img src="images/logo-mastercraft.svg" alt="Mastercraft" />
+          </div>
+          <h1>Mastercraft Bamboo Monitor Riser</h1>
+
+          <p>
+            A beautiful & handcrafted monitor stand to reduce neck and eye
+            strain.
+          </p>
+
+          <div class="bookmark-content">
+            <button type="button" class="bamboo-btn">Back this project</button>
+            <button class="bamboo-image">
+              <img
+                src="images/icon-bookmark.svg"
+                alt="Bookmark icon"
+                class="bookmark-image"
+              />
+              <span class="book-mark-text">Bookmark</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-container">
+        <div class="Donation-section">
+          <div class="funding-section">
+            <h2 class="funding-amount">$89,914</h2>
+            <p class="funding-text">of $100,000 backed</p>
+          </div>
+          <hr class="funding-line" />
+
+          <div class="funding-section">
+            <h2 class="funding-amount">5,007</h2>
+            <p class="funding-text">total backers</p>
+          </div>
+          <hr class="funding-line" />
+
+          <div class="funding-section">
+            <h2 class="funding-amount">56 <span></span></h2>
+            <p class="funding-text">days left</p>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
