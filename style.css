@@ -97,7 +97,11 @@ body {
 
  .nav-links a {
     text-decoration: none;
- } 
+ }
+ 
+    .Reward-pledge {   
+        flex-direction: row;  
+    }
 }
 
 .Reward-container {
@@ -107,6 +111,7 @@ body {
 
 .Reward-pledge {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
