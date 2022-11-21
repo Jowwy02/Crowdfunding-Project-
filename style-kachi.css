@@ -5,15 +5,15 @@
   --Moderate-cyan: hsl(176, 50%, 47%);
   --Dark-cyan: hsl(176, 72%, 28%);
   --Black: hsl(0, 0%, 0%);
-  --Light-gray: hsl(0, 0%, 81%);
-  --light-black: hsl(0, 0%, 89%);
+  --Light-gray: hsl(0, 0%, 92%);
+  --light-black: hsl(0, 1%, 67%);
 }
 
 body {
   font-size: 16px;
   background-color: var(--Light-gray);
 }
-.project-container {
+section .section-container {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -22,33 +22,35 @@ body {
   box-shadow: -1px 2px 7px -2px #bab1ad;
 }
 
-.project-card h1 {
+section .mastercraft-card h1 {
   text-align: center;
+  font-family: "Commissioner", sans-serif;
 }
 
-.project-container p {
+section .section-container p {
   color: var(--light-black);
   margin: 0 20px;
   font-size: 16px;
 }
 
-.project-card {
+section .mastercraft-card {
   text-align: center;
-  border-radius: 10px;
 }
 
-.mastercraft-logo {
+section .mastercraft-logo {
   margin: -30px auto 0;
 }
 
-.project-card h1 {
+section .mastercraft-card h1 {
   padding-top: 10px;
   word-wrap: break-word;
   padding: 0 2rem;
   font-family: "Commissioner", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
 }
 
-.bookmark-content {
+section .bookmark-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,16 +58,17 @@ body {
   padding-bottom: 2.5rem;
 }
 
-.bamboo-btn {
+section .bamboo-btn {
   background-color: var(--Moderate-cyan);
   color: white;
   border: none;
   border-radius: 35px;
-  padding: 20px 45px;
+  padding: 20px 35px;
   margin-left: 30px;
+  font-weight: bold;
 }
 
-.bamboo-image {
+section .bamboo-image {
   border: none;
   border-radius: 2rem;
   padding-top: 20px;
@@ -78,7 +81,7 @@ body {
 .Donation-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -91,13 +94,14 @@ body {
   font-family: "Commissioner", sans-serif;
 }
 .funding-text {
-  padding-top: -30px;
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-family: "Commissioner", sans-serif;
 }
 
 .funding-line {
-  width: 70%;
-  /* padding-top: 10px; */
-  /* transform: rotate(90deg); */
+  width: 20%;
+  opacity: 0.3;
 }
 .progress-bar {
   padding-bottom: 50px;
@@ -107,7 +111,7 @@ body {
 
 .progress-bar > :first-child,
 .progress-bar :last-child {
-  background-color: rgb(128, 141, 141);
+  background-color: var(--Light-gray);
   width: 90%;
   height: 10px;
   border-radius: 10px;
@@ -115,6 +119,66 @@ body {
 
 .progress-bar :last-child {
   background-color: var(--Moderate-cyan);
-  width: 70%;
+  width: 80%;
   margin-top: -10px;
+}
+
+.book-mark-text {
+  display: none;
+}
+
+@media screen and (min-width: 376px) {
+}
+@media screen and (min-width: 768px) {
+  .cards-section {
+    padding: 0 100px;
+  }
+
+  .book-mark-text {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  section .bamboo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--Light-gray);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 40px;
+  }
+
+  .bookmark-image {
+    border: white solid 1px;
+    border-radius: 50px;
+  }
+
+  .funding-line {
+    transform: rotate(90deg);
+    width: 10%;
+    margin-top: 10px;
+    opacity: 0.3;
+  }
+
+  .Donation-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+  .funding-amount {
+    padding-top: 30px;
+    padding-right: 30px;
+    margin-right: 40px;
+  }
+
+  .funding-text {
+    padding-right: 50px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
 }

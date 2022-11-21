@@ -11,69 +11,65 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-kachi.css" />
 
     <title>Frontend Mentor | Crowdfunding product page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
+
   <body>
-    <section class="project-container">
-      <div class="project-card">
-        <div class="mastercraft-logo">
-          <img src="images/logo-mastercraft.svg" alt="Mastercraft" />
+    <section class="cards-section">
+      <section class="section-container">
+        <div class="mastercraft-card">
+          <div class="mastercraft-logo">
+            <img src="images/logo-mastercraft.svg" alt="Mastercraft" />
+          </div>
+          <h1>Mastercraft Bamboo Monitor Riser</h1>
+
+          <p>
+            A beautiful & handcrafted monitor stand to reduce neck and eye
+            strain.
+          </p>
+
+          <div class="bookmark-content">
+            <button type="button" class="bamboo-btn">Back this project</button>
+            <button class="bamboo-image">
+              <img
+                src="images/icon-bookmark.svg"
+                alt="Bookmark icon"
+                class="bookmark-image"
+              />
+              <span class="book-mark-text">Bookmark</span>
+            </button>
+          </div>
         </div>
-        <h1>Mastercraft Bamboo Monitor Riser</h1>
+      </section>
 
-        <p>
-          A beautiful & handcrafted monitor stand to reduce neck and eye strain.
-        </p>
-
-        <div class="bookmark-content">
-          <button type="button" class="bamboo-btn">Back this project</button>
-          <button class="bamboo-image">
-            <img
-              src="images/icon-bookmark.svg"
-              alt="Bookmark icon"
-              class="bookmark-image"
-            />
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="project-container">
-      <div class="Donation-section">
-        <div>
-          <h2 class="funding-amount">$89,914</h2>
-          <p class="funding-text">of $100,000 backed</p>
+      <section class="section-container">
+        <div class="Donation-section">
+          <div class="funding-section">
+            <h2 class="funding-amount">$89,914</h2>
+            <p class="funding-text">of $100,000 backed</p>
+          </div>
           <hr class="funding-line" />
-        </div>
 
-        <div>
-          <h2 class="funding-amount">5,007</h2>
-          <p class="funding-text">total backers</p>
+          <div class="funding-section">
+            <h2 class="funding-amount">5,007</h2>
+            <p class="funding-text">total backers</p>
+          </div>
           <hr class="funding-line" />
-        </div>
 
-        <div>
-          <h2 class="funding-amount">56 <span></span></h2>
-          <p class="funding-text">days left</p>
+          <div class="funding-section">
+            <h2 class="funding-amount">56 <span></span></h2>
+            <p class="funding-text">days left</p>
+          </div>
         </div>
-      </div>
-      <div class="progress-bar">
-        <div></div>
-        <div></div>
-      </div>
+        <div class="progress-bar">
+          <div></div>
+          <div></div>
+        </div>
+      </section>
     </section>
   </body>
 </html>
