@@ -10,7 +10,7 @@
   --Moderate-cyan: hsl(176, 50%, 47%);
   --Dark-cyan: hsl(176, 72%, 28%);
   --black: hsl(0, 0%, 40%);
-  --dark-gray: hsl(0, 0%, 40%);
+  --dark-gray: #666666;
   --white: #fff;
 }
 
@@ -48,6 +48,11 @@ body {
 .hamburger {
   background-color: transparent;
   border: none;
+}
+
+.popup-container {
+  position: absolute;
+  border: 1px solid red;
 }
 
 @media screen and (max-width: 768px) {
@@ -89,6 +94,10 @@ body {
     position: absolute;
     top: -30px;
     right: 0;
+  }
+
+  .reward-popup-close-icon svg {
+    filter: invert(41%) sepia(1%) saturate(0%) hue-rotate(187deg) brightness(94%) contrast(85%);
   }
 }
 
