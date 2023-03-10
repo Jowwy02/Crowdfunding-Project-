@@ -1,5 +1,6 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinksWrap = document.querySelector(".nav-links");
+// const hamburger = document.querySelector(".hamburger");
+// const navLinksWrap = document.querySelector(".nav-links");
+// const headerBackground = document.querySelector(".headerBackground")
 
 //add EventListener
 //when clicked display nav items
@@ -11,6 +12,10 @@ const navLinksWrap = document.querySelector(".nav-links");
 //append the image tag to the div tag
 //return the div tag
 
+
+const hamburger = document.querySelector(".hamburger");
+const navLinksWrap = document.querySelector(".nav-links");
+
 function createCloseIcon() {
   const newDiv = document.createElement("div");
   newDiv.className = "closeIcon"
@@ -19,15 +24,17 @@ function createCloseIcon() {
   newDiv.innerHTML = closeIcon;
   return newDiv;
 }
-console.log(createCloseIcon());
 
 hamburger.addEventListener("click", () => {
   navLinksWrap.style.display = "block";
   hamburger.style.display = "none";
+  const navWrap = document.querySelector(".nav-wrapper");
+  navWrap.classList.add("nav-wrapper-bg");
   const closeIcon = createCloseIcon();
-  navLinksWrap.append(closeIcon);
+  navWrap.append(closeIcon);
   closeIcon.addEventListener("click", () => {
     navLinksWrap.style.display = "none";
+    navWrap.classList.remove("nav-wrapper-bg");
     hamburger.style.display = "block"
     closeIcon.remove()
   })

@@ -50,25 +50,40 @@ body {
   border: none;
 }
 
+.nav-wrapper-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  padding-top: 4rem;
+}
+
 @media screen and (max-width: 768px) {
   .nav-links {
     background-color: #fff;
-    position: absolute;
-    top: 9%;
+    /* position: absolute;
+    top: 9%; */
     /* height: 36%; */
-    left: 10%;
-    right: 10%;
+    /* left: 10%;
+    right: 10%; */
     /* bottom: 3%; */
     /* transform: translateX(-62vw); */
     /* z-index: 2000; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* text-align: space-between; */
-    padding: 20px 0px 10px 0;
+    /* padding: 20px 0px 10px 0; */
     /* margin:  ; */
+    width: 80%;
+    margin: 0 auto;
+    z-index: 2000;
+    border-radius: 10px; 
   }
 
   .nav-links a {
-    color: black;
+    color: black !important;
     font-size: 18px;
     display: flex;
     padding: 15px 10px 20px 15px;
@@ -87,8 +102,8 @@ body {
 
   .closeIcon {
     position: absolute;
-    top: -30px;
-    right: 0;
+    top: 1.5rem;
+    right: 2.5rem;
   }
 }
 
