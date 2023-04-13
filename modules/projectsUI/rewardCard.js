@@ -8,7 +8,7 @@ export function deactivateRewardContainer(rewardContainer, rewardCountLeft, rewa
   }
 }
 
-function createRewardCard({ name, description, minimumPledge, rewardCountLeft}) {
+function createRewardCard({ name, description, minimumPledge, rewardCountLeft, id }) {
   const rewardContainer = document.createElement('div');
   rewardContainer.classList.add('Reward-container');
   
@@ -47,6 +47,9 @@ function createRewardCard({ name, description, minimumPledge, rewardCountLeft}) 
   rewardButtonContainer.appendChild(rewardAvailability);
 
   const rewardSelectButton = document.createElement('button');
+  rewardSelectButton.classList.add('select-reward-btn');
+  // add data attribute to button
+  rewardSelectButton.dataset.id = id;
   rewardSelectButton.textContent = 'Select Reward';
   rewardButtonContainer.appendChild(rewardSelectButton);
 

@@ -3,6 +3,7 @@ import croudFund from "./modules/data.js";
 import createRewardCardPopup from "./modules/backProjectPopup/backProjectPopup.js";
 import createCloseIcon from "./utility/createCloseIcon.js";
 import addEventToCheckbox from "./modules/backProjectPopup/selectRewardCard.js";
+import addEventsToAllNonModalRewardBtns from "./modules/selectReward/selectReward.js";
 
 
 // Hamburger event
@@ -23,6 +24,8 @@ hamburger.addEventListener("click", () => {
 
 const currentProject = croudFund[0];
 projectDetailsUI(currentProject);
+
+addEventsToAllNonModalRewardBtns();
 
 const backThisProjectBtn = document.querySelector(".bamboo-btn");
 backThisProjectBtn.addEventListener("click", () => {

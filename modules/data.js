@@ -1,5 +1,11 @@
 // frontend mentors Project name: croudfunding product page
 // javascript file
+// const uniqid = require('uniqid');
+function randomId() {
+  const uint32 = window.crypto.getRandomValues(new Uint32Array(1))[0];
+  return uint32.toString(16);
+}
+
 
 const croudFund = [
   {
@@ -25,11 +31,11 @@ const croudFund = [
       { name: "Jane Doe", pledge: 89, comment: "Love it", daysAgo: 56, image: "images/avatar-2.jpg" },
     ],
     fundingRewards: [
-      { name: "Bamboo Stand", description: "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.", minimumPledge: 25, rewardCountLeft: 101, rewardId: "bamboo-stand" },
-      { name: "Black Edition Stand", description: "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.", minimumPledge: 75, rewardCountLeft: 64, rewardId: "black-edition-stand" },
-      { name: "Mahogany Special Edition", description: "You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.", minimumPledge: 200, rewardCountLeft: 0, rewardId: "mahogany-special-edition" },
+      { id: randomId(), name: "Bamboo Stand", description: "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.", minimumPledge: 25, rewardCountLeft: 101, rewardId: "bamboo-stand" },
+      { id: randomId(), name: "Black Edition Stand", description: "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.", minimumPledge: 75, rewardCountLeft: 64, rewardId: "black-edition-stand" },
+      { id: randomId(), name: "Mahogany Special Edition", description: "You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.", minimumPledge: 200, rewardCountLeft: 0, rewardId: "mahogany-special-edition" },
     ],
-    rewardWithoutPledge: { name: "Pledge with no reward", description: "Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.", minimumPledge: 0, rewardCountLeft: 100000000, rewardId: "pledge-with-no-reward" },
+    rewardWithoutPledge: { id: randomId(), name: "Pledge with no reward", description: "Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.", minimumPledge: 0, rewardCountLeft: 100000000, rewardId: "pledge-with-no-reward" },
   },
   {
     name: "Handmade LeatherCraft Wallet",

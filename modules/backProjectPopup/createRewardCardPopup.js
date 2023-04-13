@@ -17,6 +17,7 @@ function deactivateCard(cardContainer, rewardCountLeft) {
 function createRewardCard(withoutReward, reward) {
   const card = document.createElement("div");
   card.classList.add("reward-card");
+  card.dataset.id = reward.id;
 
   const header = createHeader(withoutReward, reward);
   const body = createBody(withoutReward, reward);
