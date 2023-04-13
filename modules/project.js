@@ -8,7 +8,6 @@ import createRewardCard from "./projectsUI/rewardCard.js";
 import insertAfter from "../utility/insertAfter.js";
 
 const projectDetailsUI = (project) => {
-  console.log(project);
   const mainContainer = document.createElement("main");
   mainContainer.classList.add("main-container");
  

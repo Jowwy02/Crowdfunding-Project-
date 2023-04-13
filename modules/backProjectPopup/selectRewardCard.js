@@ -10,9 +10,7 @@ function extractPledgeAmount(target) {
     pledgeAmountText = pledgeHeader.textContent.trim();
   }
   const regex = /\d+/; // Match one or more digits
-  const match = pledgeAmountText.match(regex);
-  console.log(match);
-
+  const match = pledgeAmountText.match(regex); 
   if (match) {
     return match[0];
   }
