@@ -1,13 +1,12 @@
 
 function deactivateCard(cardContainer, rewardCountLeft) {
   if(rewardCountLeft === 0) {
-    // grab .reward-card-heading, .reward-card-pledge, .reward-card-description, .reward-count-left
+    cardContainer.classList.add('reward-card--disabled'); 
     const rewardCardHeading = cardContainer.querySelector('.reward-card-heading');
     const rewardCardPledge = cardContainer.querySelector('.reward-card-pledge');
     const rewardCardDescription = cardContainer.querySelector('.reward-card-description');
     const rewardCountLeft = cardContainer.querySelector('.modal-reward-count');
 
-    // add .reward-card-heading--disabled, .reward-card-pledge--disabled, .reward-card-description--disabled, .reward-count-left--disabled
     rewardCardHeading.classList.add('reward-card-heading--disabled');
     rewardCardPledge.classList.add('reward-card-pledge--disabled');
     rewardCardDescription.classList.add('reward-card-description--disabled');

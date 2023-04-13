@@ -178,6 +178,10 @@
   color: var(--deactivated-moderate-cyan) !important;
 }
 
+.reward-card--active {
+  border: 2px solid var(--Moderate-cyan);
+}
+
 .reward-card-heading--disabled {
   color: var(--dark-gray) !important;
 }
