@@ -1,0 +1,214 @@
+:root {
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 50%, 47%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: #666666;
+  --light-gray: hsl(0, 0%, 95%);
+  --white: #fff;
+  --deactivated-black: hsl(0, 0%, 90%);
+  --deactivated-moderate-cyan: hsl(180, 33%, 67%);
+
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%; 
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.modal-container.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.reward-modal {
+  background-color: var(--white);
+  width: 80%;
+  height: fit-content;
+  padding: 2rem 1.25rem;
+  border-radius: 0.5rem;
+  position: relative;
+  margin: 30px auto;  
+}
+
+.modal-paragraph {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--dark-gray);
+  margin: 1.5rem 0;
+  line-height: 1.2rem;
+}
+
+.reward-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  border: 1px solid var(--deactivated-black);
+}
+
+.reward-card-title {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  row-gap: 0.5rem;
+}
+
+.reward-card-header {
+  display: flex;
+  align-items: center; 
+  width: 100%;  
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.reward-card-pledge {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Moderate-cyan);
+  margin-left: 1.5rem;
+}
+
+.reward-card-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-left: 1.5rem;
+}
+
+.reward-card-description {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--dark-gray);
+  margin-bottom: 1.5rem; 
+  padding: 0 1.5rem;
+  line-height: 1.3rem;
+}
+
+.reward-count-left {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: var(--deactivated-black);
+  margin-bottom: 1.5rem; 
+}
+
+.reward-count-left .modal-reward-count {
+  font-weight: 700;
+  color: var(--black);
+  font-size: 1.250rem;
+  margin-right: 0.5rem;
+}
+
+.reward-card-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5em;
+  border-top: 1px solid var(--deactivated-black);
+}
+
+.reward-card-form-group label {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.reward-card-input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.reward-card-input-group .reward-card-input {
+  width: 100px;
+  height: 3rem;
+  border: 1px solid var(--deactivated-black);
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.reward-card-btn {
+  width: 100px;
+  height: 3rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2.5rem;
+  background-color: var(--Dark-cyan);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+#modal-close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.reward-card-description--disabled,
+.modal-reward-count--disabled {
+  color: var(--deactivated-black) !important;
+}
+
+.reward-card-pledge--disabled {
+  color: var(--deactivated-moderate-cyan) !important;
+}
+
+.reward-card-heading--disabled {
+  color: var(--dark-gray) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .reward-modal {
+    width: 60%;
+  }
+
+  .reward-card {
+    position: relative;
+  }
+
+  .reward-card-title {    
+    flex-direction: row;
+    align-items: center;   
+  }
+
+  .reward-card-description {    
+    margin-bottom: 2rem;
+    margin-left: 2.3rem;    
+  }
+ 
+
+  .reward-card-form-group {   
+    flex-direction: row;    
+  }
+
+  .reward-count-left {
+    position: absolute;
+    top: 21.5px;
+    right: 10px;
+  }
+}

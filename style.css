@@ -13,7 +13,7 @@
     --dark-gray: hsl(0, 0%, 40%);
     --white: #fff;
     --deactivated-black: rgb(180, 178, 178);
-    --deactivated-moderate-cyan: hsl(176, 18%, 67%);
+    --deactivated-moderate-cyan: hsl(180, 33%, 67%);
 
 }
 
@@ -258,11 +258,11 @@ section .bamboo-image {
     border-style: none;
 }
 
-.Reward-container-deativated .Reward-pledge h4 {
+.Reward-container-deativated .Reward-pledge h3 {
     color: var(--deactivated-black);
 }
 
-.Reward-container-deativated .Reward-pledge {
+.Reward-container-deativated .Reward-pledge p {
     color: var(--deactivated-moderate-cyan);
     font-weight: 300;
 }
@@ -275,14 +275,13 @@ section .bamboo-image {
     color: var(--deactivated-black);
 }
 
-.Reward-container-deativated .btn {
-    background-color: var(--deactivated-black);
-}
-
-.Reward-container-deativated .s {
+.Reward-container-deativated .span {
     color: var(--deactivated-black);
 }
 
+.deactivated-black {
+    background-color: var(--deactivated-black) !important;
+}
 
 
 @media screen and (min-width: 768px) {
