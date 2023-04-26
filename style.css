@@ -7,21 +7,20 @@
 }
 
 :root {
-    --Moderate-cyan: hsl(176, 50%, 47%);
-    --Dark-cyan: hsl(176, 50%, 47%);
-    --black: hsl(0, 0%, 0%);
-    --dark-gray: hsl(0, 0%, 40%);
-    --white: #fff;
-    --deactivated-black: rgb(180, 178, 178);
-    --deactivated-moderate-cyan: hsl(176, 18%, 67%);
-
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 50%, 47%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 40%);
+  --white: #fff;
+  --deactivated-black: rgb(180, 178, 178);
+  --deactivated-moderate-cyan: hsl(176, 18%, 67%);
 }
 
 body {
   font-family: "commissioner", sans-serif;
 }
 
-.main-container{
+.main-container {
   padding: 0 8%;
 }
 
@@ -61,7 +60,7 @@ body {
 .cards-section {
   margin-top: -60px;
 }
-   
+
 section .section-container {
   background-color: white;
   border-radius: 15px;
@@ -180,11 +179,11 @@ section .bamboo-image {
 
 .about-project-section,
 .Reward-container,
-.black-edition{
-    padding: 2rem 1.5rem;
-    box-shadow: 0px 0px 8px -5px rgb(94, 93, 93);
-    border-radius: 10px;
-    margin-bottom: 2rem;
+.black-edition {
+  padding: 2rem 1.5rem;
+  box-shadow: 0px 0px 8px -5px rgb(94, 93, 93);
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .about-project-section > h4 {
@@ -194,96 +193,268 @@ section .bamboo-image {
   margin-bottom: 2rem;
 }
 
-.about-project-section .about-paragraph {   
+.about-project-section .about-paragraph {
   color: var(--dark-gray);
   line-height: 1.5rem;
   margin-bottom: 2rem;
 }
 
-
 .Reward-container {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .Reward-pledge {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Reward-pledge p {
-    color:var(--Dark-cyan);
-    font-weight: 700;
+  color: var(--Dark-cyan);
+  font-weight: 700;
 }
 
 .Reward-paragraph {
-    line-height: 30px;
-    margin-top: 18px;
-
+  line-height: 30px;
+  margin-top: 18px;
 }
 
-
-.Reward-button {    
-   display: flex;
-   flex-direction: column;
-   padding-top: 2rem;
-   justify-content: space-between;
+.Reward-button {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  justify-content: space-between;
 }
 
 .Reward-button button {
-    border-radius: 30rem;
-    padding: 1rem;
-    list-style: none;
-    font-weight: 50px;
-    width: 160px;
-    margin-top: 0.5rem;
+  border-radius: 30rem;
+  padding: 1rem;
+  list-style: none;
+  font-weight: 50px;
+  width: 160px;
+  margin-top: 0.5rem;
 }
 
 .Reward-count {
-    font-size: 35px;
-    font-weight: 700;
-    column-gap: 2px;
-    margin-right: 16px;
-
+  font-size: 35px;
+  font-weight: 700;
+  column-gap: 2px;
+  margin-right: 16px;
 }
 
 .Reward-button div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Reward-button button {
-    background-color: var(--Moderate-cyan);
-    color: var(--white);
-    border-style: none;
+  background-color: var(--Moderate-cyan);
+  color: var(--white);
+  border-style: none;
 }
 
 .Reward-container-deativated .Reward-pledge h4 {
-    color: var(--deactivated-black);
+  color: var(--deactivated-black);
 }
 
 .Reward-container-deativated .Reward-pledge {
-    color: var(--deactivated-moderate-cyan);
-    font-weight: 300;
+  color: var(--deactivated-moderate-cyan);
+  font-weight: 300;
 }
 
 .Reward-container-deativated .Reward-paragraph p {
-    color: var(--deactivated-black);
+  color: var(--deactivated-black);
 }
 
 .Reward-container-deativated .Reward-count {
-    color: var(--deactivated-black);
+  color: var(--deactivated-black);
 }
 
 .Reward-container-deativated .btn {
-    background-color: var(--deactivated-black);
+  background-color: var(--deactivated-black);
 }
 
 .Reward-container-deativated .s {
-    color: var(--deactivated-black);
+  color: var(--deactivated-black);
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 2rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  width: 50%; /* Could be more or less, depending on screen size */
+  box-shadow: 0 0 48px rgb(0, 0, 0, 0.5);
+}
+
+.modal-content > span {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 48%;
+  color: #bab1ad;
+}
+
+.modal-content .header-modal {
+  display: block;
+  text-align: left;
+}
+
+.modal-content .header-modal > h3 {
+  margin: 16px 6px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.modal-content .header-modal p {
+  margin-left: 6px;
+}
+
+.selection-option {
+  margin-top: 2rem;
+  border: #ddd 1px solid;
+  border-radius: 8px;
+}
+
+.selection-option:focus-within {
+  border-color: rgb(1, 124, 108);
+  outline: solid 2px rgba(0, 255, 221, 0.1);
+}
+
+.selection-option > label > .top {
+  padding: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+}
+
+.selection-option label h4 {
+  margin-bottom: 16px;
+}
+
+.selection-option label p.details {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.selection-option > label > .pledge {
+  border-top: solid 1px #ddd;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selection-option > label > .pledge > p {
+  margin: 0;
+}
+
+.selection-option > label > .pledge .right {
+  display: flex;
+  align-items: center;
+}
+
+.selection-option > label > .pledge .right .input-holder {
+  height: 40px;
+  width: 80px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.selection-option > label > .pledge .right input {
+  width: 100%;
+  height: 100%;
+  padding: 20px 35px;
+  /* padding-left: 25px; */
+  border-color: rgb(1, 124, 108);
+  border-radius: 20px;
+  outline: none;
+  font-weight: bold;
+}
+
+.selection-option > label > .pledge .right span.dollar {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.selection-option > label > .pledge .mybtn {
+  background-color: var(--Moderate-cyan);
+  color: white;
+  border: none;
+  border-radius: 35px;
+  padding: 20px 35px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+/* .bamboo-modal > label > .select { */
+/* padding: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+} */
+
+/* .bamboo-modal label h4 {
+  margin-bottom: 16px;
+}
+
+.bamboo-modal label .select p.details {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bamboo-modal > label > .pledge {
+  border-top: solid 1px #ddd;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .label {
+  display: flex;
+  justify-items: left;
+  padding: 5px;
+} */
+
+/* The Close Button */
+.close {
+  color: black;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 @media screen and (min-width: 768px) {
   .header-background {
@@ -304,15 +475,15 @@ section .bamboo-image {
 
   .nav-links a {
     text-decoration: none;
- }
- 
-    .Reward-pledge {   
-        flex-direction: row;  
-    }
+  }
 
-    .Reward-button {
-        flex-direction: row;
-    }
+  .Reward-pledge {
+    flex-direction: row;
+  }
+
+  .Reward-button {
+    flex-direction: row;
+  }
 
   .cards-section {
     padding: 0 20%;
@@ -323,7 +494,7 @@ section .bamboo-image {
     font-weight: bold;
   }
 
-  .about-project-section{
+  .about-project-section {
     margin: 0 20%;
   }
 

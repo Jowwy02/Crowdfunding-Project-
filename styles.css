@@ -61,21 +61,13 @@ body {
   padding-top: 4rem;
 }
 
+/* .bamboo-image{ */
+  /* color: var(--Moderate-cyan); */
+/* } */
+
 @media screen and (max-width: 768px) {
   .nav-links {
     background-color: #fff;
-    /* position: absolute;
-    top: 9%; */
-    /* height: 36%; */
-    /* left: 10%;
-    right: 10%; */
-    /* bottom: 3%; */
-    /* transform: translateX(-62vw); */
-    /* z-index: 2000; */
-    /* border-radius: 10px; */
-    /* text-align: space-between; */
-    /* padding: 20px 0px 10px 0; */
-    /* margin:  ; */
     width: 80%;
     margin: 0 auto;
     z-index: 2000;
