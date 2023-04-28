@@ -64,3 +64,56 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+// Get the modal
+var confirmModal = document.getElementById("confirmationModal");
+
+// Get the button that opens the modal
+var btnM = document.getElementById("confirmBtn");
+
+// When the user clicks on the button, open the modal
+btnM.onclick = function () {
+  confirmModal.style.display = "block";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == confirmModal) {
+    confirmModal.style.display = "none";
+  }
+};
+
+// Get the <span> element that closes the modal
+// var button = document.getElementsByClassName("modal__button")[0];
+
+// button.onclick = function () {
+//   confirmModal.style.display = "block";
+// };
+
+let confirmBtns = document.getElementsByClassName("confirmBtn");
+
+const triggerConfirmModal = () => {
+  confirmModal.style.display = "block";
+};
+
+for (let i = 0; i < confirmBtns.length; i++) {
+  confirmBtns[i].addEventListener("click", triggerConfirmModal, false);
+}
+
+let closeAllModalsBtn = document.getElementById("closeModals");
+
+closeAllModalsBtn.onclick = function () {
+  console.log("close");
+  confirmModal.style.display = "none";
+  modal.style.display = "none";
+};
+
+// bookmark-botton-toggle
+const bookmarkBtn = document.getElementById("bookmarkBtn");
+const buttonPressed = (e) => {
+  e.target.classList.toggle("bookmark");
+  e.target.classList.toggle("bookmarked");
+  e.target.innerText =
+    e.target.innerText.trim() === "Bookmark" ? "Bookmarked" : "Bookmark";
+};
+bookmarkBtn.addEventListener("click", buttonPressed);

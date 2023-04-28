@@ -61,6 +61,10 @@ body {
   margin-top: -60px;
 }
 
+.bamboo-btn {
+  cursor: pointer;
+}
+
 section .section-container {
   background-color: white;
   border-radius: 15px;
@@ -227,6 +231,7 @@ section .bamboo-image {
 }
 
 .Reward-button button {
+  cursor: pointer;
   border-radius: 30rem;
   padding: 1rem;
   list-style: none;
@@ -381,9 +386,9 @@ section .bamboo-image {
 .selection-option > label > .pledge .right input {
   width: 100%;
   height: 100%;
-  padding: 20px 35px;
-  /* padding-left: 25px; */
-  border-color: rgb(1, 124, 108);
+  padding: 20px 0;
+  padding-left: 25px;
+  border: 1px solid rgb(1, 124, 108);
   border-radius: 20px;
   outline: none;
   font-weight: bold;
@@ -409,35 +414,106 @@ section .bamboo-image {
   font-weight: bold;
 }
 
-/* .bamboo-modal > label > .select { */
-/* padding: 32px;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  text-align: left;
-} */
-
-/* .bamboo-modal label h4 {
-  margin-bottom: 16px;
+.span-pledge {
+  color: hsl(176, 50%, 47%);
+  padding-left: 2rem;
 }
 
-.bamboo-modal label .select p.details {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.bamboo-modal > label > .pledge {
-  border-top: solid 1px #ddd;
-  padding: 32px;
+.title-and-price {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.time-left {
+  margin-left: auto;
+  font-size: 1.25rem;
+  padding-right: 16px;
+  font-weight: 800;
+  text-align: end;
+  color: hsl(0, 0%, 0%);
+}
+
+.left {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 48%);
+}
+
+/* The Modal (background) */
+.confirmModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal__section {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 16px;
+  text-align: center;
+  width: 30vw;
+}
+
+/* .modal__section {
+  display: none;
+  padding: 3.2rem;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
 } */
 
-/* .label {
+.check {
+  padding-bottom: 3.5rem;
+  width: 7rem;
+}
+
+.modal__header {
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.modal__text {
+  padding-bottom: 2rem;
+}
+
+.modal__button {
+  border: none;
+  padding: 1.1rem 2rem;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .pledges h6 {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: end;
+  padding-left: 16px;
+  color: hsl(0, 0%, 0%);
+}
+
+.pledges .left {
   display: flex;
-  justify-items: left;
-  padding: 5px;
+  flex-direction: column;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: end;
+  color: hsl(0, 0%, 0%);
 } */
 
 /* The Close Button */
@@ -456,6 +532,19 @@ section .bamboo-image {
   cursor: pointer;
 }
 
+.mybtn {
+  cursor: pointer;
+}
+
+.bookmark {
+  background-color: black;
+  color: white;
+}
+
+.bookmarked {
+  background-color: none;
+  color: hsl(176, 50%, 47%);
+}
 @media screen and (min-width: 768px) {
   .header-background {
     background-image: url(./images/image-hero-desktop.jpg);
@@ -540,4 +629,33 @@ section .bamboo-image {
     margin-right: 40px;
     margin-bottom: 20px;
   }
+
+  /* modal-content */
+  .modal-content {
+    width: 60%;
+  }
+
+  /* .modal-cards {
+    position: relative;
+  }
+
+  .selection-option > label .top {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .selection-option > label .pledge {
+    margin-bottom: 2rem;
+    margin-left: 2.3rem;
+  }
+
+  .reward-card-form-group {
+    flex-direction: row;
+  }
+
+  .reward-count-left {
+    position: absolute;
+    top: 21.5px;
+    right: 10px;
+  } */
 }

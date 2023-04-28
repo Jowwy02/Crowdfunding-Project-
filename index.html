@@ -115,7 +115,7 @@
                               />
                               <span class="dollar">$</span>
                             </div>
-                            <button id="continue-btn" class="mybtn">
+                            <button id="confirmBtn" class="mybtn confirmBtn">
                               Continue
                             </button>
                           </div>
@@ -123,19 +123,27 @@
                       </label>
                     </div>
                     <div class="selection-option">
-                      <label for="noReward">
+                      <label for="bamboo">
                         <div class="top">
                           <input
                             type="radio"
-                            id="noReward"
+                            id="bamboo"
                             name="selection"
                             class="select"
                           />
-                          <div>
-                            <h4>Bamboo Stand</h4>
-                            <h5>Pledge $25 or more</h5>
-                            <span>left</span>
-                            <h6>101</h6>
+                          <div class="pledges">
+                            <div class="title-and-price">
+                              <h4>
+                                Bamboo Stand
+                                <span class="span-pledge"
+                                  >Pledge $25 or more</span
+                                >
+                              </h4>
+                              <p class="time-left">
+                                101
+                                <span class="left">left </span>
+                              </p>
+                            </div>
                             <p class="details">
                               You get an ergonomic stand made of natural bamboo.
                               You've helped us launch our promotional campaign,
@@ -156,7 +164,7 @@
                               />
                               <span class="dollar">$</span>
                             </div>
-                            <button id="continue-btn" class="mybtn">
+                            <button id="continue-btn" class="mybtn confirmBtn">
                               Continue
                             </button>
                           </div>
@@ -164,19 +172,27 @@
                       </label>
                     </div>
                     <div class="selection-option">
-                      <label for="noReward">
+                      <label for="black">
                         <div class="top">
                           <input
                             type="radio"
-                            id="noReward"
+                            id="black"
                             name="selection"
                             class="select"
                           />
-                          <div>
-                            <h4>Black Edition Stand</h4>
-                            <h5>Pledge $75 or more</h5>
-                            <span>left</span>
-                            <h6>64</h6>
+                          <div class="pledges">
+                            <div class="title-and-price">
+                              <h4>
+                                Black Edition Stand
+                                <span class="span-pledge"
+                                  >Pledge $75 or more</span
+                                >
+                              </h4>
+                              <p class="time-left">
+                                64
+                                <span class="left">left</span>
+                              </p>
+                            </div>
                             <p class="details">
                               You get a Black Special Edition computer stand and
                               a personal thank you. You'll be added to our
@@ -196,7 +212,7 @@
                               />
                               <span class="dollar">$</span>
                             </div>
-                            <button id="continue-btn" class="mybtn">
+                            <button id="continue-btn" class="mybtn confirmBtn">
                               Continue
                             </button>
                           </div>
@@ -205,19 +221,27 @@
                     </div>
 
                     <div class="selection-option">
-                      <label for="noReward">
+                      <label for="mahogany">
                         <div class="top">
                           <input
                             type="radio"
-                            id="noReward"
+                            id="mahogany"
                             name="selection"
                             class="select"
                           />
-                          <div>
-                            <h4>Mahogany Special Edition</h4>
-                            <h5>Pledge $200 or more</h5>
-                            <h6>2</h6>
-                            <span>left</span>
+                          <div class="pledges">
+                            <div class="title-and-price">
+                              <h4>
+                                Mahogany Special Edition
+                                <span class="span-pledge"
+                                  >Pledge $200 or more</span
+                                >
+                              </h4>
+                              <p class="time-left">
+                                2
+                                <span class="left">left</span>
+                              </p>
+                            </div>
                             <p class="details">
                               You get two Special Edition Mahogany stands, a
                               Backer T-shirt, and a personal thank you. You'll
@@ -238,7 +262,7 @@
                               />
                               <span class="dollar">$</span>
                             </div>
-                            <button class="mybtn">Continue</button>
+                            <button class="mybtn confirmBtn">Continue</button>
                           </div>
                         </div>
                       </label>
@@ -247,7 +271,7 @@
                 </div>
               </div>
 
-              <button class="bamboo-image">
+              <button id="bookmarkBtn" class="bamboo-image">
                 <img
                   src="images/icon-bookmark.svg"
                   alt="Bookmark icon"
@@ -287,7 +311,7 @@
       <section class="about-project-section">
         <h4>About this project</h4>
         <p class="about-paragraph">
-          The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform
+          The Mastercraft Bamboo Monitor Riser is a study and stylish platform
           that elevates your screen to a more comfortable viewing height.
           Placing your monitor at eye level has the potential to improve your
           posture and make you more comfortable while at work, helping you stay
@@ -404,131 +428,23 @@
         </div>
       </div> -->
       </section>
-
-      <!-- modals -->
-      <!-- <section class="modal">
-      <header class="close-modal">
-        <img src="./images/icon-close-modal.svg" alt="close modal icon" class="close-modal">
-        <h3>Back this project</h3>
-        <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world</p>
-      </header>
-      <section class="modal-cards">
-        <section class="selection option">
-         <div class="select">
-           <input type="radio" id="no-reward"  name="selection"  />
-         </div>
-         <label for="noReward">
-         <div class="details">
-          <div class="radioCircle"></div>
-           <h4>Pledge with no reward</h2>
-           </label>
-           </div>
-           <p>Choose to support us without reward if you simply believe in our project.
-             As a backer, you will be signed up to receive updates via email.
-           </p>
-         <div class="pledge">
-           <p>Enter your pledge</p>
-           <div class="amount"></div>
-           <div>
-             <input type="text" name="pledge" id="option1" placeholder="0.00">
-           </div>
-           <button>Continue</button>
-         </div>
-       </section>
-       <section class="selection option bamboo">
-         <div class="select">
-           <input type="radio" name="selection" value="bamboo" id="bamboo">
-         </div>
-         <label for="bamboo">
-          <div class="details">
-            <div class="radioCircle"></div>
-            <h4>Bamboo Stand</h4>
-            <h5>Pledge $25 or more </h5>
-          </div>
-         </label>
-         <div class="stock desktopStock">
-          <h6>101</h6>
-          <span>left</span>
-         </div>
-         <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.</p>
-         <div class="pledge">
-          <p>Enter your pledge</p>
-         </div>
-         <div class="amount">
-          <div>
-            <input type="text" name="pledge" id="option2" placeholder="0.00">
-          </div>
-          <button>Continue</button>
-         </div>
-       </section>
-       <section class="selection option black">
-         <div class="select">
-          <input type="radio" name="selection" value="black" id="black">
-          <label for="black">
-            <div class="details">
-              <div class="radioCircle"></div>
-              <h4>Black Edition Stand</h4>
-              <h5>Pledge $75 or more</h5>
-            </div>
-          </label>
-          <div class="stock desktopStock">
-            <h6>64</h6>
-            <span>left</span>
-          </div>
-          <p> You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer member list. Shipping is included.</p>
-          <div class="pledge">
-            <p>Enter your pledge</p>
-           </div>
-           <div class="amount">
-            <div>
-              <input type="text" name="pledge" id="option3" placeholder="0.00">
-            </div>
-            <button>Continue</button>
-           </div>
-         </div>
-       </section>
-       <section class="selection option mahogany">
-        <div class="select">
-         <input type="radio" name="selection" value="mahogany" id="mahogany">
-         <label for="mahogany">
-           <div class="details">
-             <div class="radioCircle"></div>
-             <h4>Mahogany Special Edition</h4>
-             <h5>Pledge $200 or more</h5>
-           </div>
-         </label>
-         <div class="stock desktopStock">
-           <h6>2</h6>
-           <span>left</span>
-         </div>
-         <p>You get two Special Edition Mahogany stands, a Backer T-shirt, and a personal thank you. You'll be added to our Backer member list. Shipping is included.</p>
-         <div class="pledge">
-           <p>Enter your pledge</p>
-          </div>
-          <div class="amount">
-           <div>
-             <input type="text" name="pledge" id="option3" placeholder="0.00">
-           </div>
-           <button>Continue</button>
-          </div>
-        </div>
-      </section>
-      </section>
-   </section> -->
-
-      <!-- confirmation  -->
-      <!-- <div id="confirmation">
-        <section>
-          <img src="./images/icon-check.svg" alt="Thank you" />
-          <h3>Thanks for your support!</h3>
-          <p>
-            Your pledge brings us one step closer to sharing Mastercraft Bamboo
-            Monitor Riser worldwide. You will get an email once our campaign is
-            completed.
-          </p>
-          <button>Got it!</button>
-        </section>
-      </div> -->
     </main>
+    <!-- The Modal -->
+    <div id="confirmationModal" class="confirmModal">
+      <!-- Modal content -->
+      <section class="modal__section">
+        <img src="../images/icon-check.svg" alt="Check" class="check" />
+
+        <div class="modal__header">Thanks for your support!</div>
+
+        <div class="modal__text">
+          Your pledge brings us one step closer to sharing Mastercraft Bamboo
+          Monitor Riser worldwide. You will get an email once our campaign is
+          completed.
+        </div>
+
+        <button id="closeModals" class="modal__button button">Got it!</button>
+      </section>
+    </div>
   </body>
 </html>
